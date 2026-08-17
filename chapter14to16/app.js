@@ -44,5 +44,44 @@ document.write("Score of " + students[1] + " is " + scores[1] + ". Percentage: "
 document.write("Score of " + students[2] + " is " + scores[2] + ". Percentage: " + percentage3 + "%");
 //question9//
 //question10//
+var scores = [320, 230, 480, 120];
 
+document.write("Scores of Students: " + scores + "<br>");
 
+scores.sort(function(a, b) {
+    return a - b;
+});
+
+document.write("Ordered Scores of Students: " + scores);
+
+//question11//
+var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+
+document.write("Cities list:<br>");
+document.write(cities + "<br><br>");
+
+var selectedCities = cities.slice(2, 4);
+
+document.write("Selected cities list:<br>");
+document.write(selectedCities);
+//question12//
+var arr = ["This", "is", "my", "cat"];
+
+var singleString = arr.join(" ");
+
+document.write(singleString);
+//question13//
+
+var arr = [];
+
+arr.push("Apple");
+arr.push("Banana");
+arr.push("Mango");
+arr.push("Orange");
+
+document.write("Array: " + arr + "<br><br>");
+
+document.write("First value: " + arr.shift() + "<br>");
+document.write("Second value: " + arr.shift() + "<br>");
+document.write("Third value: " + arr.shift() + "<br>");
+document.write("Fourth value: " + arr.shift());
